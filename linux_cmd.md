@@ -59,6 +59,8 @@
 | `which` | Returns the path to a file or link. |
 | `find` | Searches for files in a directory hierarchy. | 
 find . -name xxx.txt
+remove error
+find / -name "*.txt" 2>/dev/null
 | `updatedb` | Updates the locale database for existing contents on the system. |
 | `locate` | Uses the locale database to find contents on the system. | 
 | `more` | Pager that is used to read STDOUT or files. |
